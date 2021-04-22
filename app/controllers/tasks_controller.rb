@@ -20,6 +20,7 @@ class TasksController < ApplicationController
     else
       flash.now[:danger]='task が登録されませんでした'
       render :new
+    end
   end
 
   def edit
@@ -43,13 +44,13 @@ class TasksController < ApplicationController
     @task.destroy
 
     flash[:success]='Task は正常に削除されました'
-    redairect_to tasks_url
+    redirect_to tasks_url
   end
-end
 
-private
+  private
+  #Strong Parameter
+  def task_params
+    params.require(:task).permit(:content)
+  end
 
-#Strong Parameter
-def task_params
-  params.require(:task).permit(:content)
 end
