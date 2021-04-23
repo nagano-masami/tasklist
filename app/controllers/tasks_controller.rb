@@ -9,7 +9,7 @@ class TasksController < ApplicationController
   end
 
   def new
-    @task=Task.new(content:'今日が人生で一番若い日')
+    @task=Task.new(status: 'ステータス入力',content:'今日が人生で一番若い日')
   end
 
   def create
@@ -56,7 +56,7 @@ class TasksController < ApplicationController
   end
 
   def task_params
-    params.require(:task).permit(:content)
+    params.require(:task).permit(:content,:status)
   end
 
 end
