@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.5'
 # Use mysql as the database for Active Record
 gem 'mysql2', '0.4.10'   #gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem "puma", ">= 4.3.8"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -55,3 +55,5 @@ group :production do
   gem 'pg', '>= 0.18', '< 2.0'
 end
 
+gem "nokogiri", ">= 1.11.4"
+gem "actionpack", ">= 5.2.5"
