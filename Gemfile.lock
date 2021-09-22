@@ -82,12 +82,12 @@ GEM
     msgpack (1.4.2)
     mysql2 (0.4.10)
     nio4r (2.5.7)
-    nokogiri (1.12.4-x86_64-darwin)
+    nokogiri (1.11.7-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.12.4-x86_64-linux)
+    nokogiri (1.11.7-x86_64-linux)
       racc (~> 1.4)
     pg (1.2.3)
-    puma (5.4.0)
+    puma (4.3.8)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
@@ -168,16 +168,16 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  actionpack (>= 5.2.5)
+  actionpack (~> 5.2.5)
   bootsnap (>= 1.1.0)
   byebug
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   mysql2 (= 0.4.10)
-  nokogiri (>= 1.11.4)
+  nokogiri (~> 1.11.4)
   pg (>= 0.18, < 2.0)
-  puma (>= 4.3.8)
+  puma (~> 4.3.8)
   rails (~> 5.2.5)
   sass-rails (~> 5.0)
   spring
